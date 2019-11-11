@@ -4,7 +4,7 @@
   "description": "```bash $ git checkout --detach # run `npm run build` to generate the `dist` directory $ git commit -m 1.0.0 $ git tag v1.0.0 $ git push --tags ```",
   "main": "index.js",
   "scripts": {
-    "build": "touch ./dist/finn.dist",
+    "build": "mkdir dist && touch ./dist/finn.dist",
     "release": "./tools/release.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
