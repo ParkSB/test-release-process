@@ -14,12 +14,11 @@ fi
 git checkout --detach
 
 npm run build
-sed '/dist/d' ./.gitignore
 
 git add ./dist
 git commit -m v$VERSION
+
 git tag v$VERSION
 git push --tags
 
-git checkout -- ./.gitignore
 git checkout master
