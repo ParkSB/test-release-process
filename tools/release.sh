@@ -11,7 +11,7 @@ if [ -z "$VERSION" ]; then
   exit 2
 fi
 
-git chekout --detach
+git checkout --detach
 
 npm run build
 sed '/dist/d' ./.gitignore
